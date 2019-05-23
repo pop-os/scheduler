@@ -6,4 +6,4 @@ edition = "2018"
 
 [dependencies]
 procfs = "0.5.2"
-libc = "0.2.54"
+libc = "0.2.55"

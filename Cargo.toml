@@ -15,7 +15,7 @@ members = [ "pidwatcher", "scheduler" ]
 [dependencies]
 err-derive = "0.1.5"
 indexmap = { version = "1.0.2", features = [ "serde-1" ]}
-libc = "0.2.54"
+libc = "0.2.55"
 pidwatcher = { path = "pidwatcher" }
 scheduler = { path = "scheduler" }
 regex = "1.1.6"

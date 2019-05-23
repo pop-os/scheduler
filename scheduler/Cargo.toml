@@ -7,5 +7,5 @@ edition = "2018"
 
 [dependencies]
 errno = "0.2.4"
-libc = "0.2.54"
+libc = "0.2.55"
 bitvec = "0.11.1"
