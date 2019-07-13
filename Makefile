@@ -1,4 +1,4 @@
-prefix ?= /usr/local
+PREFIX ?= /usr/local
 sysconfdir ?= /etc
 
 DAEMON=process-scheduler
@@ -38,11 +38,11 @@ vendor:
 	rm -rf vendor
 
 install: all
-	install -Dm04755 "target/$(TARGET)/$(DAEMON)" "$(DESTDIR)$(prefix)/bin/$(DAEMON)"
+	install -Dm04755 "target/$(TARGET)/$(DAEMON)" "$(DESTDIR)$(PREFIX)/bin/$(DAEMON)"
 	install -Dm0644 "data/$(DAEMON).service" "$(DESTDIR)/lib/systemd/system/$(DAEMON).service"
 
 uninstall:
-	rm "$(DESTDIR)$(prefix)/bin/$(DAEMON)" "$(DESTDIR)/lib/systemd/system/$(DAEMON).service"
+	rm "$(DESTDIR)$(PREFIX)/bin/$(DAEMON)" "$(DESTDIR)/lib/systemd/system/$(DAEMON).service"
 
 systemd-enable:
 	systemctl daemon-reload
